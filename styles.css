@@ -1,0 +1,139 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    font-weight: 400;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: red;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: red;
+}
+
+h1, h2 {
+    color: red;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-around;
+    padding: 2em;
+}
+
+.product {
+    background-color: red;
+    border: 1px solid red;
+    padding: 1em;
+    margin: 1em;
+    width: 30%;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: red;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.navbar-brand {
+    padding: 1.5em;
+    background-color: white;
+    border-radius:70%;
+}
+
+.welcome {
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+    border-radius: 20px;
+    color: white;
+    margin-left: 300px;
+    margin-right: 300px;
+    font-size: 70px;
+    
+}
+
+.ourProducts {
+
+}
+
+.about{
+    color:white;
+
+}
+
+
+.nav-item {
+    text-decoration:rgb(130, 36, 36);
+    background-color: rgb(255, 95, 95);
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 30px;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* Additional styles for scrolling effect */
+.card {
+    overflow: hidden; /* Hide the overflowing part of the image */
+}
+
+.card-img-top {
+    transition: transform 0.3s ease;
+}
+
+.card:hover .card-img-top {
+    transform: translateY(-10%); /* Adjust this value to change the scroll amount */
+}
+
+.card-body {
+    height: 250px; 
+    overflow: hidden;
+}
+
+.mt-4{
+
+
+}
+
+.quote{
+    COLOR:WHITE;
+    font-weight: 300;
+    text-align: center;
+}
+
+
+.col-md-6{
+    border: 8px beige solid;
+    background-color: beige;
+    border-radius: 3%;
+   
+
+}
+
+
+.text-center{
+    font-family: 'Nunito', sans-serif;
+}
+
+
+

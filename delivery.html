@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jollibee - Delivery</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            font-family: 'Nunito', sans-serif;
+        }
+        main {
+            flex: 1;
+        }
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        .navbar-nav .nav-link {
+            transition: color 0.3s ease, background-color 0.3s ease;
+            border-radius: 25%;
+        }
+        .navbar-nav .nav-link:hover {
+            color: red; /* Change to your preferred hover color */
+            background-color: rgba(255, 255, 255, 0.512);
+            border-radius: 25%;
+        }
+        .footer a:hover img {
+            filter: brightness(0.8); /* Adjust brightness on hover */
+        }
+        .content-section {
+            padding: 2rem 0;
+        }
+        .content-section h2,
+        .content-section h3 {
+            margin-bottom: 1.5rem;
+        }
+        .content-section p.lead {
+            margin-bottom: 2rem;
+        }
+        .content-section ol,
+        .content-section ul {
+            margin-bottom: 2rem;
+        }
+        .form-group label {
+            font-weight: 700;
+        }
+        .form-group input,
+        .form-group textarea {
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-danger text-center p-3">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="index.html">
+                <img src="jollibee-logo.png" alt="Jollibee Logo" class="logo" style="height: 110px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="delivery.html">Delivery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="menu.html">Menu</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <h1 class="welcome">Delivery</h1><br>
+    </header>
+    <main>
+        <section class="container content-section mt-5">
+            <h2 class="text-center">Order Your Favorites Online</h2>
+            <p class="lead text-center">Get your Jollibee favorites delivered right to your door!</p>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <h3>How to Order</h3>
+                    <ol>
+                        <li>Visit our online ordering portal or call our delivery hotline.</li>
+                        <li>Select your favorite Jollibee meals and add them to your cart.</li>
+                        <li>Provide your delivery details and complete the payment process.</li>
+                        <li>Sit back and relax while we prepare and deliver your order.</li>
+                    </ol>
+                </div>
+                <div class="col-md-6">
+                    <h3>Delivery Areas</h3>
+                    <p>We currently deliver to the following areas:</p>
+                    <ul>
+                        <li>Metro Manila</li>
+                        <li>Cebu City</li>
+                        <li>Davao City</li>
+                        <li>And more!</li>
+                    </ul>
+                    <p>Check our online ordering portal for the complete list of delivery areas.</p>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-12">
+                    <h3>Contact Us</h3>
+                    <p>If you have any questions or need assistance with your order, please don't hesitate to contact us:</p>
+                    <ul>
+                        <li>Delivery Hotline: 8-7000</li>
+                        <li>Email: delivery@jollibee.com</li>
+                    </ul>
+                    <h4>Contact Form</h4>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" class="form-control" id="subject" placeholder="Enter the subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Enter your message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-danger">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+                <div class="col-md-12">
+                    <a href="https://www.facebook.com/jollibee" target="_blank">
+                        <img src="facebook_logo.png" alt="Facebook" style="height: 30px; margin: 0 10px;">
+                    </a>
+                    <a href="https://www.instagram.com/jollibee" target="_blank">
+                        <img src="instagram_logo.png" alt="Instagram" style="height: 30px; margin: 0 10px;">
+                    </a>
+                    <a href="https://www.twitter.com/jollibee" target="_blank">
+                        <img src="twitter_logo.png" alt="Twitter" style="height: 30px; margin: 0 10px;">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

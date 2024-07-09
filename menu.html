@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jollibee - Menu</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        main {
+            flex: 1;
+        }
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        .navbar-nav .nav-link {
+            transition: color 0.3s ease, background-color 0.3s ease;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #ffc107; /* Change to your preferred hover color */
+            background-color: rgba(255, 193, 7, 0.2); /* Highlight background color */
+        }
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+        .card-body {
+            height: 150px;
+        }
+        .section-title {
+            margin-top: 2rem;
+        }
+        .scroll-to-section {
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .scroll-to-section button {
+            margin: 0.5rem;
+        }
+        #back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            display: none;
+            background-color: #ffc107;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            padding: 10px;
+            cursor: pointer;
+        }
+        #back-to-top:hover {
+            background-color: #ff5733;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-danger text-center p-3">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="index.html">
+                <img src="jollibee-logo.png" alt="Jollibee Logo" class="logo" style="height: 110px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="delivery.html">Delivery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="menu.html">Menu</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <h1 class="welcome">Our Menu</h1>
+    </header>
+    <main>
+        <section class="container mt-5">
+            <h2 class="text-center">Our Best Sellers</h2>
+            <div class="scroll-to-section">
+                <button class="btn btn-danger" onclick="document.getElementById('beverages').scrollIntoView();">Beverages</button>
+                <button class="btn btn-danger" onclick="document.getElementById('other-items').scrollIntoView();">Other Items</button>
+                <button class="btn btn-danger" onclick="document.getElementById('dessert').scrollIntoView();">Dessert</button>
+            </div>
+            <div class="row mt-4" id="chickenjoy">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="Jollibee-Chickenjoy.jpg" class="card-img-top" alt="Chickenjoy">
+                        <div class="card-body">
+                            <h3 class="card-title">Chickenjoy</h3>
+                            <p class="card-text">Crispylicious and Juicylicious fried chicken, a Jollibee favorite!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" id="jolly-spaghetti">
+                    <div class="card mb-4">
+                        <img src="Jolly_spag.jpg" class="card-img-top" alt="Jolly Spaghetti">
+                        <div class="card-body">
+                            <h3 class="card-title">Jolly Spaghetti</h3>
+                            <p class="card-text">Sweet-style spaghetti with hotdog slices and cheese, perfect for kids and adults alike.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" id="yumburger">
+                    <div class="card mb-4">
+                        <img src="Yumburger.jpg" class="card-img-top" alt="Yumburger">
+                        <div class="card-body">
+                            <h3 class="card-title">Yumburger</h3>
+                            <p class="card-text">Burger patty with special dressing in a soft bun, a delightful snack.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="jolly_steak.jpg" class="card-img-top" alt="Burger Steak">
+                        <div class="card-body">
+                            <h3 class="card-title">Burger Steak</h3>
+                            <p class="card-text">Burger patty with savory gravy and mushrooms, a hearty meal.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="halohalo.png" class="card-img-top" alt="Halo-Halo">
+                        <div class="card-body">
+                            <h3 class="card-title">Halo-Halo</h3>
+                            <p class="card-text">Mixed dessert with shaved ice, milk, and various ingredients, perfect for a hot day.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="peach_mango_pie.png" class="card-img-top" alt="Peach Mango Pie">
+                        <div class="card-body">
+                            <h3 class="card-title">Peach Mango Pie</h3>
+                            <p class="card-text">Crispy pie crust filled with peach and mango filling, a sweet treat.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="jolly_hotdog.jpg" class="card-img-top" alt="Jolly Hotdog">
+                        <div class="card-body">
+                            <h3 class="card-title">Jolly Hotdog</h3>
+                            <p class="card-text">Hotdog with cheese, mayonnaise, and ketchup, a flavorful snack.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="palabok.jpg" class="card-img-top" alt="Pancit Palabok">
+                        <div class="card-body">
+                            <h3 class="card-title">Pancit Palabok</h3>
+                            <p class="card-text">Traditional Filipino noodles with a savory sauce, topped with smoked fish flakes, pork chicharon, and eggs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="pandan.jpg" class="card-img-top" alt="Buko Pandan">
+                        <div class="card-body">
+                            <h3 class="card-title">Buko Pandan</h3>
+                            <p class="card-text">Refreshing dessert made with coconut and pandan, a traditional Filipino favorite.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="mangoGraham.jpg" class="card-img-top" alt="Mango Graham">
+                        <div class="card-body">
+                            <h3 class="card-title">Mango Graham</h3>
+                            <p class="card-text">Layers of mango and cream with graham crackers, a delightful dessert.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Beverages Section -->
+            <h2 class="text-center section-title" id="beverages">Beverages</h2>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="iced_tea.jpg" class="card-img-top" alt="Iced Tea">
+                        <div class="card-body">
+                            <h3 class="card-title">Iced Tea</h3>
+                            <p class="card-text">Refreshing iced tea, perfect for any meal.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="pineapple juice.png" class="card-img-top" alt="Pineapple Juice">
+                        <div class="card-body">
+                            <h3 class="card-title">Pineapple Juice</h3>
+                            <p class="card-text">Tropical pineapple juice, a refreshing drink.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="buko_juice.jpg" class="card-img-top" alt="Buko Juice">
+                        <div class="card-body">
+                            <h3 class="card-title">Buko Juice</h3>
+                            <p class="card-text">Coconut juice, a traditional and refreshing beverage.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other Items Section -->
+            <h2 class="text-center section-title" id="other-items">Other Items</h2>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="fries.jpg" class="card-img-top" alt="Jolly Crispy Fries">
+                        <div class="card-body">
+                            <h3 class="card-title">Jolly Crispy Fries</h3>
+                            <p class="card-text">Crispy and flavorful fries, perfect as a side or a snack.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="mashed_potato.jpg" class="card-img-top" alt="Mashed Potato">
+                        <div class="card-body">
+                            <h3 class="card-title">Mashed Potato</h3>
+                            <p class="card-text">Creamy mashed potatoes, a great side dish.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="buttered_corn.jpg" class="card-img-top" alt="Buttered Corn">
+                        <div class="card-body">
+                            <h3 class="card-title">Buttered Corn</h3>
+                            <p class="card-text">Sweet corn with butter, a tasty side.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desserts Section -->
+            <h2 class="text-center section-title" id="dessert">Desserts</h2>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="peach_mango_pie.jpg" class="card-img-top" alt="Peach Mango Pie">
+                        <div class="card-body">
+                            <h3 class="card-title">Peach Mango Pie</h3>
+                            <p class="card-text">Crispy pie crust filled with peach and mango filling, a sweet treat.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="halohalo.jpg" class="card-img-top" alt="Halo-Halo">
+                        <div class="card-body">
+                            <h3 class="card-title">Halo-Halo</h3>
+                            <p class="card-text">Mixed dessert with shaved ice, milk, and various ingredients, perfect for a hot day.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="coconut_ice_cream.jpg" class="card-img-top" alt="Coconut Ice Cream">
+                        <div class="card-body">
+                            <h3 class="card-title">Coconut Ice Cream</h3>
+                            <p class="card-text">Creamy ice cream made with coconut, a tropical delight.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 Jollibee. All rights reserved.</p>
+    </footer>
+    <button id="back-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">↑</button>
+    <script>
+        document.addEventListener("scroll", function() {
+            const backToTopButton = document.getElementById("back-to-top");
+            if (window.scrollY > 200) {
+                backToTopButton.style.display = "block";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        });
+    </script>
+</body>
+</html>
