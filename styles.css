@@ -66,7 +66,7 @@ footer {
     font-family: 'Nunito', sans-serif;
     border-radius: 20px;
     color: white;
-    font-size: 40px;
+    font-size: 23px;
     text-align: center; /* Center the text */
     margin: 0 auto; /* Center horizontally */
     max-width: 800px; /* Limit the maximum width */
@@ -151,5 +151,5 @@ footer {
 
 .about{
     color:white;
-    font-size:30px;
+    font-size:23px;
 }
