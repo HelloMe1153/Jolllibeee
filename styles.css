@@ -49,7 +49,6 @@ h1, h2 {
 footer {
     background-color: #333;
     color: red;
-    text-align: center;
     padding: 1em;
     position: fixed;
     width: 100%;
@@ -59,7 +58,7 @@ footer {
 .navbar-brand {
     padding: 1.5em;
     background-color: white;
-    border-radius:70%;
+    border-radius: 70%;
 }
 
 .welcome {
@@ -67,34 +66,32 @@ footer {
     font-family: 'Nunito', sans-serif;
     border-radius: 20px;
     color: white;
-    margin-left: 300px;
-    margin-right: 300px;
     font-size: 70px;
-    
+    text-align: center; /* Center the text */
+    margin: 0 auto; /* Center horizontally */
+    max-width: 800px; /* Limit the maximum width */
+    padding: 20px; /* Add some padding */
 }
 
-.ourProducts {
-
+/* Adjusted styles for navigation items */
+.navbar-nav .nav-item {
+    margin: 0 10px;
 }
 
-.about{
-    color:white;
-
-}
-
-
-.nav-item {
-    text-decoration:rgb(130, 36, 36);
-    background-color: rgb(255, 95, 95);
+.navbar-nav .nav-link {
+    color: white;
+    font-size: 20px;
+    padding: 10px 15px;
     border-radius: 10px;
-    padding: 10px;
-    font-size: 30px;
-    font-family: 'Nunito', sans-serif;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: rgba(255, 193, 7, 0.2);
 }
 
 /* Additional styles for scrolling effect */
 .card {
-    overflow: hidden; /* Hide the overflowing part of the image */
+    overflow: hidden;
 }
 
 .card-img-top {
@@ -102,7 +99,7 @@ footer {
 }
 
 .card:hover .card-img-top {
-    transform: translateY(-10%); /* Adjust this value to change the scroll amount */
+    transform: translateY(-10%);
 }
 
 .card-body {
@@ -110,30 +107,49 @@ footer {
     overflow: hidden;
 }
 
-.mt-4{
-
-
-}
-
-.quote{
-    COLOR:WHITE;
-    font-weight: 300;
+/* General text centering */
+.text-center {
     text-align: center;
-}
-
-
-.col-md-6{
-    border: 8px beige solid;
-    background-color: beige;
-    border-radius: 3%;
-   
-
-}
-
-
-.text-center{
     font-family: 'Nunito', sans-serif;
 }
 
+/* Adjusted styles for other sections as needed */
+.section-title {
+    margin-top: 2rem;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+}
 
+.scroll-to-section {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
 
+.scroll-to-section button {
+    margin: 0.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .welcome {
+        font-size: 40px;
+    }
+    .navbar-nav .nav-link {
+        font-size: 16px;
+    }
+}
+
+#other-items{
+    text-align: center;
+}
+
+.quote{
+    color:white;
+    font-style: italic;
+}
+
+.about{
+    color:white;
+    font-size:70px;
+}
